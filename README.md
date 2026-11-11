@@ -72,3 +72,13 @@ App-Inventario1.0/
 ├── routes/                # Endpoints RESTful (`auth.js`, `catalog.js`, `inventory.js`, `sales.js`)
 ├── tests/                 # Pruebas de integración con Jest y Supertest
 └── .github/workflows/     # Pipeline CI en GitHub Actions
+🚀 Instalación y Ejecución LocalPrerrequisitosNode.js v18+ o v20+GitPasosClonar el repositorio:Bashgit clone [https://github.com/JanpierQuintero-dev/SolviTek-v2.git](https://github.com/JanpierQuintero-dev/SolviTek-v2.git)
+cd SolviTek-v2
+Instalar dependencias:Bashnpm install
+Configurar variables de entorno (Opcional):Bashexport PORT=3000
+export JWT_SECRET=tu_clave_secreta_local
+export REPORT_TZ_OFFSET=-5
+Iniciar servidor en modo desarrollo:Bashnpm run dev
+Abrir el navegador en http://localhost:3000. El primer usuario que registre la aplicación obtendrá automáticamente el rol de admin.🧪 Pruebas & Calidad de CódigoEjecutar la suite de pruebas unitarias y de integración:Bashnpm test
+Ejecutar el analizador de código estático (ESLint):Bashnpm run lint
+🗺️ Roadmap & Próximas Mejoras[ ] Implementación de transacciones explícitas (BEGIN/COMMIT) en transacciones complejas.[ ] Integración de servicio SMTP para recuperación de credenciales vía email.[ ] Exportación de reportes comerciales a formato PDF.[ ] Lectura de códigos de barras mediante cámara web en la interfaz del POS.[ ] Dockerización del entorno (Dockerfile y docker-compose).👤 AutorJanpier QuinteroGitHub: @JanpierQuintero-dev   Email: jampierquintero0@gmail.com   Ubicación: Colombia
